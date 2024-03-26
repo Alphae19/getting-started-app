@@ -1,6 +1,6 @@
 #Pour tout push dans le repo
 #- déclencher un build d'une nouvelle image docker en utilisant le Dockerfile 
-#- et faire un psuh vers dockerHub
+#- et faire un push vers dockerHub
 
 name: build and push image
 on: [push]
@@ -13,7 +13,7 @@ jobs:
       run: tree
   
     - name: login to Docker Hub
-      uses: docker/login-action@v1
+    - uses: docker/login-action@v1
   
       with:
        username: ${{ secrets.DOCKER_HUB_USERNAME }}
