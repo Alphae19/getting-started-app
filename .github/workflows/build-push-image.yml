@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: user1/appname:latest
+          tags: dorianvrn19/appname:latest
